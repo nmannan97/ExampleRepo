@@ -12,7 +12,18 @@ for i in range(len(B)):
     current = B[i]
     for j in range(len(B)):
         if(current > B[j]):
-            B.insert(j, B[j])
+            temp = B[j]
+            B[j] = current
+            B[j-1] = temp
         else:
             break
-print(B) #print [0,1,2,3,4,5,6,7,8,9]
+print(B) #print [1,2,3,4,5,6,7,8,9,10]
+''''
+A = []
+counter = 0
+while(condition):
+    A.append(counter)
+    counter += 1
+
+print(A) #A = [0,1,2,3,4,5,6,7,8,9]
+'''
