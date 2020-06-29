@@ -1,7 +1,12 @@
-
-
-A = [1,2,3,4,5,6,7,8,9,10]
+A = [1,'1','3',4,5,6,'10', 10, 100]
+B = []
+C = []
 
 for i in range(len(A)):
-    if(A[i] == 1 ):
-        print(A[i]) #print numbers 2 and 7
+    if(type(A[i]) is int):
+        B.append(A[i])
+    else:
+        C.append(float(A[i]))
+
+print(C)
+print(B)
