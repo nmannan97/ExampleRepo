@@ -1,12 +1,11 @@
-A = [1,'1','3',4,5,6,'10', 10, 100]
-B = []
-C = []
+import csv
+X = []
 
-for i in range(len(A)):
-    if(type(A[i]) is int):
-        B.append(A[i])
-    else:
-        C.append(float(A[i]))
+dataX = open('C:/Users/tyler/OneDrive/Documents/python/Intro-python-final/dataX.csv')
+dataY = open('C:/Users/tyler/OneDrive/Documents/python/Intro-python-final/dataY.csv')
 
-print(C)
-print(B)
+dataX = csv.reader(dataX)
+dataY = csv.reader(dataY)
+
+for rows in dataX:
+    print(rows)
