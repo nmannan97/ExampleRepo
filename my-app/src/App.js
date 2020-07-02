@@ -3,11 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import Button from './Button'
 
-var counter = 0;
-function increment(){
-  counter = counter+1;
-  console.log("function entered")
-};
 function App() {
   return (
     <div className="App">
@@ -24,12 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        
-        <button onClick = {increment()}> click me! </button>
-        <p> 
-          {console.log("starting")}
-          the button has been clicked {counter} times {console.log(counter)}
-        </p>
+        <Button/>
       </header>
     </div>
   );

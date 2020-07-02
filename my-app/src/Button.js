@@ -4,7 +4,9 @@ export default class Button extends React.Component{
     
     constructor(props){
         super(props);
-        this.state = {counter : 0};
+        this.state = {
+            counter : 0,
+        };
     }
 
     Increment(){
