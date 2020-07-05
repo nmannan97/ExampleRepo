@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.function2 {
+  text-align: right;
+  background-color: #282c34;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
