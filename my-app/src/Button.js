@@ -6,9 +6,15 @@ export default class Button extends React.Component{
         super(props);
         this.state = {
             counter : 0,
+            var2 : 0
         };
     }
 
+    example(){
+        var temp = 0;
+        //logic for factorial 
+        this.setState({counter : temp});
+    }
     Increment(){
         this.setState({
             counter: this.state.counter + 1
